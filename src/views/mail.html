@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Gift Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .container {
+        padding: 0 16px;
+        max-width: 580px;
+        margin: 0 auto;
+      }
+      .top {
+        padding: 20px 130px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .footer {
+        background: #f7f7f7;
+        font-size: 13px;
+        text-align: center;
+        padding: 20px;
+        color: #373737;
+      }
+
+      .footer_title {
+        color: #222;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .content {
+        color: #222222;
+        text-align: center;
+        padding: 20px 0 43px 0;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      .giftcard {
+        background: rgba(86, 105, 255, 0.05);
+        border-radius: 8px;
+        padding: 24px 30px;
+        margin: 14px 0 40px 0;
+        margin-bottom: 10px;
+      }
+
+      .template_giftcard {
+        border-radius: 8px;
+      }
+
+      .message {
+        padding: 12px 0 20px 0;
+      }
+
+      .value_giftcard {
+        border: 1px dashed #5669ff;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 8px 25px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #2f2c35;
+      }
+
+      .redeem {
+        padding-top: 20px;
+        font-size: 16px;
+        color: #373737;
+      }
+
+      .title-redeem {
+        font-size: 20px;
+      }
+
+      .code {
+        padding: 0 25px;
+        font-size: 18px;
+      }
+
+      .code_group {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      @media (max-width: 640px) {
+        .top {
+          padding: 16px 24px;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+
+        .giftcard {
+          border-radius: 4px;
+          margin: 14px 0 40px 0;
+        }
+
+        .redeem {
+          font-size: 14px;
+        }
+
+        .code {
+          font-size: 15px;
+        }
+
+        .code_group {
+          display: block;
+        }
+
+        .footer_title {
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <img src="../assets/images/logo-2.svg" alt="" />
+    </div>
+    <div class="container">
+      <div class="content">
+        <p class="title">Your Gift Card $50.00</p>
+        <div class="giftcard">
+          <img
+            src="../assets/images/birthday-3-html.jpg"
+            alt=""
+            class="template_giftcard"
+          />
+          <div class="message">
+            <p style="font-style: italic; font-weight: 600">Hi Lisa,</p>
+            <p style="padding: 5px 0 10px 0; line-height: 24px">
+              Wishing my bestie, the absolute best on her best day of the year!
+              Happy birthday!
+            </p>
+            <p style="font-style: italic; font-weight: 600">From: Alex</p>
+          </div>
+          <div class="value_giftcard">$50.00 USD</div>
+          <div class="redeem">
+            <p style="font-style: italic; font-size: 16px">Redeem at:</p>
+            <p class="title title-redeem" style="padding: 8px 0 12px 0">
+              Cinderella Nails & Spa
+            </p>
+            <p>
+              <span style="font-weight: 700">Address: </span>
+              <span>11011 Richmond Ave, Ste 250 Houston, TX 77042</span>
+            </p>
+            <p style="padding-top: 6px">
+              <span style="font-weight: 700">Business phone: </span>
+              <span>(979) 217-2012</span>
+            </p>
+          </div>
+        </div>
+        <div class="code">
+          <p style="padding-bottom: 15px">
+            Print of scan this barcode/qr code on your phone to pay at
+            participating stores.
+          </p>
+          <div class="code_group">
+            <div>
+              <img
+                src="http://localhost:5174/src/assets/images/barcode.png"
+                alt=""
+              />
+              <p>1380991729641019</p>
+            </div>
+            <p style="padding: 10px 0 16px 0">OR</p>
+            <div>
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100"
+                alt=""
+                width="80"
+                height="80"
+              />
+              <p>3779 4454 8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p class="footer_title">Terms of Use</p>
+        <p style="padding: 20px 0">
+          Your use of this gift card constitutes acceptance of these terms: This
+          gift card may be applied toward any service except for giftcards. This
+          gift card is not exchangeable for cash or replaced if lost or stolen.
+        </p>
+        <p>
+          <span style="font-weight: 600">Enter here for balance: </span>
+          <span>giftcard.gocheckin.net/11527</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

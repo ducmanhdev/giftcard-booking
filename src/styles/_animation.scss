@@ -1,0 +1,48 @@
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.list-leave-active {
+  position: absolute;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s;
+}
+
+.page-leave-to,
+.page-enter-from {
+  transform: translateY(25px);
+  opacity: 0;
+}
+
+.slide-from-right-enter-active,
+.slide-from-right-leave-active {
+  transition: all 0.2s;
+}
+
+.slide-from-right-enter-from,
+.slide-from-right-leave-to {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.slide-from-bottom-enter-active,
+.slide-from-bottom-leave-active {
+  transition: all 0.2s;
+}
+
+.slide-from-bottom-enter-from,
+.slide-from-bottom-leave-to {
+  transform: translateY(30px);
+  opacity: 0;
+}

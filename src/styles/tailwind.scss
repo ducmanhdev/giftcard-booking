@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex justify-center items-center h-[52px] sm:h-16 p-2 text-center rounded-lg text-lg sm:text-xl font-bold transition outline-none cursor-pointer;
+    &-primary{
+      @apply bg-primary text-white;
+    }
+    &-outline-primary{
+      @apply border border-primary bg-white text-primary;
+    }
+    &-text{
+      @apply text-primary
+    }
+    &.disabled,
+    &:disabled{
+      @apply bg-CDD text-CA9 pointer-events-none border-CDD;
+    }
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

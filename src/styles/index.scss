@@ -1,0 +1,66 @@
+@import url('@/assets/fonts/SFProDisplay/stylesheet.css');
+@import '_animation.scss';
+
+:root {
+  --header-height: 52px;
+  @media (min-width: 640px) {
+    --header-height: 70px;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'SF Pro Display', sans-serif;
+  color: #222222;
+}
+
+.custom-h-screen {
+  min-height: calc((100 * var(--vh)) - var(--header-height));
+}
+
+.dp__theme_light {
+  --dp-primary-color: #5669ff;
+  --dp-primary-text-color: #5669ff;
+}
+
+.dp__now_wrap.dp__now_wrap {
+  padding: 0.25rem 0 0.75rem;
+}
+
+#app {
+  @media (min-width: 640px) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    header,
+    footer {
+      flex-shrink: 0;
+    }
+    main {
+      flex-grow: 1;
+    }
+  }
+}
+
+button:disabled {
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.vue-notification-group {
+  width: 190px !important;
+  top: 10px !important;
+
+  .vue-notification {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left-width: 10px;
+    font-size: 16px;
+  }
+}
